@@ -8,8 +8,6 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: #111;
-  color: #bbb;
 }
 
 a {
@@ -28,7 +26,7 @@ a {
 
 .dark {
   background-color: #111;
-  color: white;
+  color: #bbb;
 }
 
 .container {

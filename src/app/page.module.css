@@ -8,11 +8,11 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
 
 .title {
-  font-size: 72px;
+  font-size: 100px;
   background: linear-gradient(to bottom, #194c33, #bbb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -37,14 +37,4 @@
 .desc {
   font-size: 24px;
   font-weight: 300;
-}
-
-.button {
-  padding: 20px;
-  cursor: pointer;
-  background-color: #53c28b;
-  border: none;
-  border-radius: 5px;
-  width: max-content;
-  color: white;
 }

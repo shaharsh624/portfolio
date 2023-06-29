@@ -1,6 +1,6 @@
 .container {
   height: 50px;
-  font-size: small;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;

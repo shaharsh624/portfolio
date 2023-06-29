@@ -3,10 +3,25 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
 
+export const metadata = {
+  title: "Harsh Contact Information",
+  description: "This is Contact Page",
+};
+
 const Contact = () => {
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const formData = {};
+    Array.from(e.currentTarget).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+    console.log(formData);
+  }
+
   return (
     <div className={styles.container}>
-      <div className={styles.title}>Let's Keep in Touch</div>
+      <h1 className={styles.title}>Let's Keep in Touch</h1>
       <div className={styles.content}>
         <div className={styles.imgContainer}>
           <Image
@@ -17,15 +32,26 @@ const Contact = () => {
           />
         </div>
         <form className={styles.form}>
-          <input type="text" placeholder="name" className={styles.input} />
-          <input type="text" placeholder="email" className={styles.input} />
+          <input
+            type="text"
+            name="Name"
+            placeholder="name"
+            className={styles.input}
+          />
+          <input
+            type="text"
+            name="Email"
+            placeholder="email"
+            className={styles.input}
+          />
           <textarea
+            className={styles.textArea}
             placeholder="message"
+            name="Message"
             cols="30"
             rows="10"
-            className={styles.textArea}
           ></textarea>
-          <Button url="#" text="Send"></Button>
+          <Button url="#" text="Send" />
         </form>
       </div>
     </div>

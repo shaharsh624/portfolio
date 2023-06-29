@@ -9,6 +9,7 @@
   font-weight: bold;
   font-size: 22px;
 }
+
 .links {
   display: flex;
   align-items: center;
@@ -21,5 +22,5 @@
   background-color: #53c28b;
   color: white;
   cursor: pointer;
-  border-radius: 3px;;
+  border-radius: 3px;
 }

@@ -47,7 +47,7 @@
 }
 
 .tag {
-  padding: 0.4rem 0.7rem;
+  padding: 0.4rem 0.6rem;
   border-radius: 5px;
   cursor: default;
   text-transform: none;
@@ -56,9 +56,9 @@
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
   width: fit-content;
-  background-color: #a483e0;
+  background-color: #47a1d8;
   color: white;
-  font-weight: 600;
+  font-size: 80%;
 }
 
 .buttonContainer {

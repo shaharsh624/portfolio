@@ -24,6 +24,17 @@
   /* animation: move 3s infinite ease alternate; */
 }
 
+.btn {
+  padding: 18px;
+  cursor: pointer;
+  background-color: #53c28b;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  color: white;
+  font-size: 90%;
+}
+
 @keyframes move {
   from {
     transform: translateY(-15px);

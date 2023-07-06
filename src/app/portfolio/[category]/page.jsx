@@ -34,21 +34,21 @@ const Category = ({ params }) => {
             </div>
             <div className={styles.buttonContainer}>
               <div className={styles.btn}>
-                <Button text="Website" url={item.site} />
+                <Button text="Live Site" url={item.site} />
               </div>
               <div className={styles.btn}>
                 <Button text="Source Code" url={item.code} />
               </div>
             </div>
           </div>
-            <div className={styles.imgContainer}>
-              <Image
-                className={styles.img}
-                fill={true}
-                src={item.images[0]}
-                alt=""
-              />
-            </div>
+          <div className={styles.imgContainer}>
+            <Image
+              className={styles.img}
+              fill={true}
+              src={item.images[0]}
+              alt=""
+            />
+          </div>
         </div>
       ))}
     </div>

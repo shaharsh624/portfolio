@@ -4,6 +4,7 @@ import Button from "@/components/Button/Button";
 import Image from "next/image";
 import { items } from "./data.js";
 import { notFound } from "next/navigation";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const getData = (cat) => {
   const data = items[cat];
@@ -24,16 +25,30 @@ const Category = ({ params }) => {
           <div className={styles.content}>
             <h1 className={styles.title}>{item.title}</h1>
             <p className={styles.desc}>{item.desc}</p>
-            <Button text="See More" url={`my-work/${item.id}`} />
+            <div className={styles.tech}>
+              {item.tech.map((tag) => (
+                <button className={styles.tag} key={tag}>
+                  {tag}
+                </button>
+              ))}
+            </div>
+            <div className={styles.buttonContainer}>
+              <div className={styles.btn}>
+                <Button text="Website" url={item.site} />
+              </div>
+              <div className={styles.btn}>
+                <Button text="Source Code" url={item.code} />
+              </div>
+            </div>
           </div>
-          <div className={styles.imgContainer}>
-            <Image
-              className={styles.img}
-              fill={true}
-              src={item.images[0]}
-              alt=""
-            />
-          </div>
+            <div className={styles.imgContainer}>
+              <Image
+                className={styles.img}
+                fill={true}
+                src={item.images[0]}
+                alt=""
+              />
+            </div>
         </div>
       ))}
     </div>

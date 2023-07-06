@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.item}>
         <h1 className={styles.title}>Harsh Shah</h1>
-        <p className={styles.desc}>Web Developer | AI-ML </p>
+        <p className={styles.desc}>Web Developement | Machine Learning </p>
         <Button url="/portfolio/my-work" text="See My Work" />
       </div>
       <div className={styles.item}>

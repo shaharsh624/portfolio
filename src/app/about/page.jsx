@@ -2,58 +2,61 @@ import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
+import { items } from "./data.js";
+
+const getData = () => {
+  const data = items["skills"];
+
+  if (data) {
+    return data;
+  }
+
+  return notFound();
+};
 
 const About = () => {
+  const data = getData();
   return (
     <div className={styles.container}>
-      <div className={styles.imgContainer}>
-        <Image
-          src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          fill={true}
-          alt=""
-          className={styles.img}
-        />
-        <div className={styles.imgText}>
-          <h1 className={styles.imgTitle}>Digital Storytellers</h1>
-          <h2 className={styles.imgDesc}>
-            Handcrafting award winning digital experiences
-          </h2>
-        </div>
-      </div>
       <div className={styles.textContainer}>
         <div className={styles.item}>
-          <h1 className={styles.title}>Who Are We?</h1>
+          <h1 className={styles.title}>About Me</h1>
           <p className={styles.desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            quae dolor, optio voluptatibus magnam iure esse tempora beatae. A
-            suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Ducimus quae dolor, optio voluptatibus magnam iure esse tempora
-            beatae, a suscipit eos. Animi quibusdam cum omnis officiis
+            Hello, my name is Harsh Shah, and I am currently pursuing my
+            undergraduate degree in Computer Science from Pandit Deendayal
+            Energy University in India. As a frontend developer with experience
+            in backend development, I specialize in creating websites for
+            individuals and small businesses. <br />
+            <br />
+            My passion lies in the fields of machine learning and data science,
+            and I am constantly seeking new opportunities to explore and deepen
+            my understanding of these areas. I am also interested in Data
+            Structures and Algorithms and strive to improve my programming
+            skills continually.
+            <br />
+            <br />I am currently available for collaboration regarding projects
+            related to machine learning or web development. Feel free to contact
+            me.
             <br />
             <br />
-            voluptatum quo ea eveniet? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure
-            esse tempora beatae, a suscipit eos. Animi quibusdam cum omnis
-            officiis voluptatum quo ea eveniet?
+            Apart from my academic pursuits, I am an avid learner and spend my
+            free time learning about space and the universe.
           </p>
         </div>
-        <div className={styles.item}>
-          <h1 className={styles.title}>What We Do?</h1>
-          <p className={styles.desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            quae dolor, optio voluptatibus magnam iure esse tempora beatae, a
-            suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. -
-            Creative Illustrations
-            <br />
-            <br /> - Dynamic Websites
-            <br />
-            <br /> - Fast and Handy
-            <br />
-            <br /> - Mobile Apps
-          </p>
-          <Button url="/contact" text="Contact" />
+        <h1 className={styles.title}>Skills</h1>
+        <div className={styles.skillContainer}>
+          {data.map((item) => (
+            <div className={styles.itemContainer} key={item.id}>
+              <img
+                className={styles.img}
+                src={item.img}
+                alt={item.name}
+                fill={true}
+                loading="lazy"
+              />
+              <h3 className={styles.imgText}>{item.name}</h3>
+            </div>
+          ))}
         </div>
       </div>
     </div>

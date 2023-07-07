@@ -4,7 +4,6 @@ import Button from "@/components/Button/Button";
 import Image from "next/image";
 import { items } from "./data.js";
 import { notFound } from "next/navigation";
-import { ThemeProvider } from "@/context/ThemeContext";
 
 const getData = (cat) => {
   const data = items[cat];

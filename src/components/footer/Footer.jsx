@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.social}>
         <Link href="https://www.linkedin.com/in/harshshahdev/" prefetch={true}>
           <Image
-            src="/5.png"
+            src="/images/social/linkedin.png"
             width={20}
             height={20}
             className={styles.icon}
@@ -20,7 +20,7 @@ const Footer = () => {
 
         <Link href="https://github.com/shaharsh624" prefetch={true}>
           <Image
-            src="/9.png"
+            src="/images/social/github.png"
             width={20}
             height={20}
             className={styles.icon}
@@ -30,7 +30,7 @@ const Footer = () => {
 
         <Link href="https://twitter.com/_shaharshhh" prefetch={true}>
           <Image
-            src="/7.png"
+            src="/images/social/twitter.png"
             width={20}
             height={20}
             className={styles.icon}

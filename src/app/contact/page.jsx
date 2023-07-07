@@ -36,7 +36,7 @@ const Contact = () => {
         <div className={styles.imgContainer}>
           <Image
             priority
-            src="/contact.png"
+            src="/images/other/contact.png"
             alt=""
             fill={true}
             className={styles.image}

@@ -6,21 +6,12 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useForm, ValidationError } from "@formspree/react";
 
-export const metadata = {
+const metadata = {
   title: "Harsh Contact Information",
   description: "This is Contact Page",
 };
 
 const Contact = () => {
-  // async function handleSubmit(e) {
-  //   e.preventDefault();
-  //   const formData = {};
-  //   Array.from(e.currentTarget).forEach((field) => {
-  //     if (!field.name) return;
-  //     formData[field.name] = field.value;
-  //   });
-  //   console.log(formData);
-  // }
   let router = useRouter();
   function redirect() {
     if (state.succeeded) {

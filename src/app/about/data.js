@@ -7,8 +7,8 @@ export const items = {
     },
     {
       id: 2,
-      name: "ReactJS",
-      img: "/images/skills/ReactJS.png",
+      name: "MongoDB",
+      img: "/images/skills/MongoDB.png",
     },
     {
       id: 3,
@@ -17,28 +17,28 @@ export const items = {
     },
     {
       id: 4,
+      name: "ReactJS",
+      img: "/images/skills/ReactJS.png",
+    },
+    {
+      id: 5,
       name: "NodeJs",
       img: "/images/skills/NodeJS.png",
     },
     {
-      id: 5,
+      id: 6,
       name: "JavaScript",
       img: "/images/skills/JavaScript.png",
     },
     {
-      id: 6,
+      id: 7,
       name: "Python",
       img: "/images/skills/Python.png",
     },
     {
-      id: 7,
+      id: 8,
       name: "Java",
       img: "/images/skills/Java.png",
-    },
-    {
-      id: 8,
-      name: "MongoDB",
-      img: "/images/skills/MongoDB.png",
     },
     {
       id: 9,

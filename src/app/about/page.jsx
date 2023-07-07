@@ -50,7 +50,6 @@ const About = () => {
                 src={item.img}
                 alt={item.name}
                 fill={true}
-                loading="lazy"
               />
               <h3 className={styles.imgText}>{item.name}</h3>
             </div>

@@ -20,7 +20,7 @@ const About = () => {
         <div className={styles.item}>
           <h1 className={styles.title}>About Me</h1>
           <p className={styles.desc}>
-            Hello, my name is <b>Harsh Shah</b>. <br/> <br/>
+            Hello 👋, I am <b>Harsh Shah</b>. <br/> <br/>
             A passionate Frontend developer from India studying Computer Engineering at PDEU, Gandhinagar & member of ACM PDEU Student Chapter. I am a driven and motivated developer with a passion for solving complex problems & creating elegant and efficient solutions. When I was introduced to programming, I built a basic billing system. This fueled up my passion for building new things and using code to solve daily problems.
             <br/><br/>
             I am exploring my varied interests and challenging myself to do things. Presently, I have a good knowledge of Web Development, Java and Data Structures. I am trying my hands on Machine Learning.

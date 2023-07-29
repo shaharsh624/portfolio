@@ -20,25 +20,12 @@ const About = () => {
         <div className={styles.item}>
           <h1 className={styles.title}>About Me</h1>
           <p className={styles.desc}>
-            Hello, my name is Harsh Shah, and I am currently pursuing my
-            undergraduate degree in Computer Science from Pandit Deendayal
-            Energy University in India. As a frontend developer with experience
-            in backend development, I specialize in creating websites for
-            individuals and small businesses. <br />
-            <br />
-            My passion lies in the fields of machine learning and data science,
-            and I am constantly seeking new opportunities to explore and deepen
-            my understanding of these areas. I am also interested in Data
-            Structures and Algorithms and strive to improve my programming
-            skills continually.
-            <br />
-            <br />I am currently available for collaboration regarding projects
-            related to machine learning or web development. Feel free to contact
-            me.
-            <br />
-            <br />
-            Apart from my academic pursuits, I am an avid learner and spend my
-            free time learning about space and the universe.
+            Hello 👋, I am <b>Harsh Shah</b>. <br/> <br/>
+            A passionate Frontend developer from India studying Computer Engineering at PDEU, Gandhinagar & member of ACM PDEU Student Chapter. I am a driven and motivated developer with a passion for solving complex problems & creating elegant and efficient solutions. When I was introduced to programming, I built a basic billing system. This fueled up my passion for building new things and using code to solve daily problems.
+            <br/><br/>
+            I am exploring my varied interests and challenging myself to do things. Presently, I have a good knowledge of Web Development, Java and Data Structures. I am trying my hands on Machine Learning.
+            <br/><br/>
+            My Hobbies includes playing chess, reading, and exploring new technologies. I am dedicated to stay up-to-date with the latest industry trends and always seek new challenges to expand my skillset.
           </p>
         </div>
         <h1 className={styles.title}>Skills</h1>
